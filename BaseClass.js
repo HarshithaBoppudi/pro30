@@ -10,43 +10,38 @@ class BaseClass{
         this.height = height;
         World.add(world, this.body);
       }
+
       display(){
-        if(this.body.speed<3){
-          box3.display();
-          box4.display();
+        console.log(this.body.speed);
+        if(this.body.speed<8){
+          push();
+          translate(this.body.position.x, this.body.position.y);
+          rect(0, 0, this.width, this.height);
+          pop();
          
-      
-          box5.display();
-          box6.display();
-          box7.display();
-          box8.display();
-          box9.display();
-          box10.display();
-          box11.display();
-          box12.display();
-          box13.display();
-          box14.display();
-        
-          
-      
-         
-        }
+       }
         else{
           
+         // fill("aqua");
+         
           World.remove(world,this.body);
-          push()
+         /* push();
+         
           this.visiblity=this.visiblity-5
-          tint(255,this.visiblity);
-          (this.body,this.body.position.x,this.body.position.y);
-         pop();
+          translate(this.body.position.x, this.body.position.y);
+          rect(0, 0, this.width, this.height);
+     
+         // tint(255,this.visiblity);
+         // (this.body,this.body.position.x,this.body.position.y);
+         pop();*/
         }
-       // push();
-        //fill("aqua");
+        
+       //push();
+       
        // var pos =this.body.position;
       
         
-        // translate(this.body.position.x, this.body.position.y);
-         //rect(0, 0, this.width, this.height);
+      
         
          //pop();
           }

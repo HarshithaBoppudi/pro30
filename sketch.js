@@ -66,7 +66,7 @@ function draw(){
     box2.display();
     ground.display();
    
-
+  fill("green");
     box3.display();
     box4.display();
    
@@ -75,6 +75,7 @@ function draw(){
     box6.display();
     box7.display();
     box8.display();
+    fill("blue");
     box9.display();
     box10.display();
     box11.display();
@@ -102,7 +103,7 @@ function draw(){
     platform.display();
     platform2.display();
     //log6.display();
-  //  slingshot.display();
+    slingshot.display();
     
        
 }
@@ -115,17 +116,17 @@ function mouseDragged(){
 function mouseReleased(){
     slingshot.fly();
 }
-//function keyPressed(){
-//if(keyCode===32){
+function keyPressed(){
+if(keyCode===32){
 
-   // slingshot.attach(bird.body);
-//}
-
-
+    slingshot.attach(box2.body);
+}
 
 
 
 
 
 
- 
+
+
+}
