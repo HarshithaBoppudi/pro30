@@ -12,7 +12,7 @@ class BaseClass{
       }
 
       display(){
-        console.log(this.body.speed);
+       // console.log(this.body.speed);
         if(this.body.speed<8){
           push();
           translate(this.body.position.x, this.body.position.y);
@@ -44,6 +44,11 @@ class BaseClass{
       
         
          //pop();
+          }
+          score(){
+            if(this.Visiblity<0&&this.Visiblity>-105){
+              score++
+            }
           }
        
         }
